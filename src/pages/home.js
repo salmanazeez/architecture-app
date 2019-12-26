@@ -4,6 +4,7 @@ import NavBar from '../components/navbar';
 
 import {Row,
         Col, 
+        Image,
         } from 'react-bootstrap';
 import Typography from '@material-ui/core/Typography';
 
@@ -28,7 +29,13 @@ function Home() {
                             </div>
                         </Col>
                     </Col>
-                    <Col xs={12} md={6}></Col>
+                    <Col xs={12} md={6}>
+                        <div className="social-container">
+                            <Image src={require('../assets/img/facebook.png')} fluid />
+                            <Image src={require('../assets/img/instagram.png')} fluid />
+                            <Image src={require('../assets/img/twitter.png')} fluid />
+                        </div>
+                    </Col>
                 </Row>
             </div>
         </div>
