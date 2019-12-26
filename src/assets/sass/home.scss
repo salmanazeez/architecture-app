@@ -31,7 +31,7 @@
                     .navbar-nav {
                         position: absolute;
                         left: 50%;
-                        transform: translatex(-50%);
+                        transform: translateX(-50%);
 
                         a {
                             margin: 0 2.5rem;
@@ -55,6 +55,22 @@
                             &::placeholder {
                                 color: $primary;
                                 margin: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: $desktop) {
+                    border: none;
+
+                    .navbar {
+                        .navbar-nav {
+                            position: unset;
+                            left: 0;
+                            transform: translateX(0);
+
+                            a {
+                                margin: 0;
                             }
                         }
                     }
