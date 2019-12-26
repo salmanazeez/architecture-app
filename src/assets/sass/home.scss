@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    .homepage-container {
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(49, 49, 150, 0.3)), url(../img/home.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+
+            .col {
+                margin-right: 0;
+                margin-left: 0;
+                border-bottom: 1px solid $secondary;
+
+                .navbar {
+                    padding: 4rem;
+                    
+                    .navbar-brand {
+                        color: $primary;
+                    }
+
+                    .navbar-nav {
+                        position: absolute;
+                        left: 50%;
+                        transform: translatex(-50%);
+
+                        a {
+                            margin: 0 2.5rem;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
