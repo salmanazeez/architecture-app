@@ -3,6 +3,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: $global-font;
+    font-weight: bold;
     
     .homepage-container {
         background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(49, 49, 150, 0.3)), url(../img/home.jpg);
@@ -34,6 +36,26 @@
                         a {
                             margin: 0 2.5rem;
                             color: $primary;
+                            font-size: 0.9rem;
+                        }
+
+                        .search-icon {
+                            color: $primary;
+                            position: absolute;
+                        }
+                        
+                        .form-control {
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $primary;
+                            border-radius: 0;
+                            padding: 0 0.5rem 0 1.5rem;
+                            color: $primary;
+
+                            &::placeholder {
+                                color: $primary;
+                                margin: 1rem;
+                            }
                         }
                     }
                 }

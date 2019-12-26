@@ -2,7 +2,10 @@ import React from 'react';
 import '../assets/sass/home.scss'
 import {Navbar,
         Nav, 
+        Form,
+        FormControl,
         } from 'react-bootstrap';
+import SearchIcon from '@material-ui/icons/Search';
 
 function NavBar() {
     return (
@@ -18,7 +21,11 @@ function NavBar() {
                         <Nav.Link href="#pricing">News</Nav.Link>
                         <Nav.Link href="#pricing">Careers</Nav.Link>
                         <Nav.Link href="#pricing">Contact</Nav.Link>
+                        <Form inline>
+                            <SearchIcon className="search-icon" /><FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                        </Form>
                     </Nav>
+                    
                 </Navbar.Collapse>
             </Navbar>
         </>
