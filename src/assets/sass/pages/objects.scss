@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .page-container {
+        padding: 8rem;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 400;
+        }
+
+        .sub-category {
+            display: flex;
+
+            h6 {
+                padding: 0 1rem;
+            }
+
+            .active {
+                color: $gold;
+            }
+        }
+    }
+}

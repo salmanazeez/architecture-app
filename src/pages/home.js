@@ -1,6 +1,5 @@
 import React from 'react';
-import '../assets/sass/home.scss'
-import NavBar from '../components/navbar';
+import '../assets/sass/pages/home.scss'
 
 import {Row,
         Col, 
@@ -11,11 +10,6 @@ import Typography from '@material-ui/core/Typography';
 function Home() {
     return (
         <div className="homepage-container">
-            <Row>
-                <Col>
-                    <NavBar></NavBar>
-                </Col>
-            </Row>
             <div className="contents-container">
                 <Row>
                     <Col xs={12} md={6}>
