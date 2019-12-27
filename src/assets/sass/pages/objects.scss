@@ -23,5 +23,17 @@ body {
                 color: $gold;
             }
         }
+
+        @media (max-width: $desktop) {
+            padding: 0;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h6 {
+                font-size: 0.8rem;
+            }
+        }
     }
 }

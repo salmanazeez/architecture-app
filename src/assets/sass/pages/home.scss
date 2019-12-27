@@ -13,6 +13,8 @@ body {
         height: 100vh;
         background-position: 50%;
         color: $primary;
+        position: absolute;
+        width: 100%;
 
         .contents-container {
             .text-container {

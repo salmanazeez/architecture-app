@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+body {
+    .card-border {
+        border-bottom: 1px solid $secondary;
+    }
+    
+    .contents-container {
+        margin: 5rem 0 5rem 0;
+
+        .secondary-text {
+            color: $secondary;
+        }
+
+        .details-container {
+            margin-top: 10rem;
+        }
+
+        @media (max-width: $tablet) {
+            margin: 2rem 0 2rem 0;
+
+            .details-container {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

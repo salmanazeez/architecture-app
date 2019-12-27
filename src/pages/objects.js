@@ -1,8 +1,10 @@
 import React from 'react';
 import '../assets/sass/pages/objects.scss'
-import Typography from '@material-ui/core/Typography';
+import CardLeft from '../components/card-left'
+import CardRight from '../components/card-right'
+import Typography from '@material-ui/core/Typography'
 import {Row,
-        Col, 
+        Col,
         } from 'react-bootstrap';
 
 function Objects() {
@@ -17,6 +19,14 @@ function Objects() {
                     <Typography variant="subtitle1">landscape architecture</Typography>
                     <Typography variant="subtitle1" className="active">designing</Typography>
                     <Typography variant="subtitle1">interior designs</Typography>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <CardLeft></CardLeft>
+                    <CardRight></CardRight>
+                    <CardLeft></CardLeft>
+                    <CardRight></CardRight>
                 </Col>
             </Row>
         </div>
