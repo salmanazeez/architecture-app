@@ -25,6 +25,8 @@ function Objects() {
                 <Col>
                     <CardLeft></CardLeft>
                     <CardRight></CardRight>
+                    <CardLeft></CardLeft>
+                    <CardRight></CardRight>
                 </Col>
             </Row>
         </div>
