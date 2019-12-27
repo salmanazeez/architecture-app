@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from './pages/home';
 import NavBar from './components/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
@@ -10,7 +9,6 @@ function App() {
       <BrowserRouter>
         <NavBar />
       </BrowserRouter>
-      <Home />
     </>
   );
 }
