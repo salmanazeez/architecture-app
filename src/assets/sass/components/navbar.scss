@@ -1,6 +1,8 @@
 @import '../variables.scss';
 
 body {
+    color: $font-color;
+    
     .row {
         margin-right: 0;
         margin-left: 0;
@@ -15,7 +17,9 @@ body {
                 font-weight: bold;
                 
                 .navbar-brand {
-                    color: $primary;
+                    span {
+                        color: $secondary;
+                    }
                 }
             
                 .navbar-nav {
@@ -25,25 +29,23 @@ body {
             
                     a {
                         margin: 0 2.5rem;
-                        color: $primary;
+                        color: $font-color;
                         font-size: 0.9rem;
                     }
             
                     .search-icon {
-                        color: $primary;
                         position: absolute;
                     }
                     
                     .form-control {
                         background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid $primary;
+                        border-bottom: 1px solid $font-color;
                         border-radius: 0;
                         padding: 0 0.5rem 0 1.5rem;
-                        color: $primary;
             
                         &::placeholder {
-                            color: $primary;
+                            color: $secondary;
                             margin: 1rem;
                         }
                     }
