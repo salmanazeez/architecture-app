@@ -17,7 +17,7 @@ function NavBar() {
     return (
         <div>
             <Row>
-                <Col>
+                <Col className="nav-border">
                     <Navbar collapseOnSelect expand="lg" >
                         <Navbar.Brand as={Link} to="/"><span>BALTIC</span>ARCH.</Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
