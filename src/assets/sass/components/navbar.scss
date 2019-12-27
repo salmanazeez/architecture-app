@@ -1,0 +1,71 @@
+@import '../variables.scss';
+
+body {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    
+        .col {
+            margin-right: 0;
+            margin-left: 0;
+            border-bottom: 1px solid $secondary;
+    
+            .navbar {
+                padding: 4rem;
+                
+                .navbar-brand {
+                    color: $primary;
+                }
+            
+                .navbar-nav {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+            
+                    a {
+                        margin: 0 2.5rem;
+                        color: $primary;
+                        font-size: 0.9rem;
+                    }
+            
+                    .search-icon {
+                        color: $primary;
+                        position: absolute;
+                    }
+                    
+                    .form-control {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $primary;
+                        border-radius: 0;
+                        padding: 0 0.5rem 0 1.5rem;
+                        color: $primary;
+            
+                        &::placeholder {
+                            color: $primary;
+                            margin: 1rem;
+                        }
+                    }
+                }
+            }
+    
+            @media (max-width: $desktop) {
+                border: none;
+    
+                .navbar {
+                    padding: 1rem;
+                    
+                    .navbar-nav {
+                        position: unset;
+                        left: 0;
+                        transform: translateX(0);
+    
+                        a {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
