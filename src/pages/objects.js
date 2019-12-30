@@ -3,8 +3,11 @@ import '../assets/sass/pages/objects.scss'
 import CardLeft from '../components/card-left'
 import CardRight from '../components/card-right'
 import Typography from '@material-ui/core/Typography'
+import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import {Row,
         Col,
+        Form,
+        FormControl,
         } from 'react-bootstrap';
 
 function Objects() {
@@ -27,6 +30,17 @@ function Objects() {
                     <CardRight></CardRight>
                     <CardLeft></CardLeft>
                     <CardRight></CardRight>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} md={6} className="newsletter-container">
+                    <Typography variant="subtitle1"><strong>Subscribe to our newsletter to receive exclusive information about us and our services</strong></Typography>
+                    <Form inline>
+                        <FormControl type="text" placeholder="Enter your e-mail" className="mr-sm-2" /><ArrowRightAltIcon />
+                    </Form>
+                </Col>
+                <Col xs={12} md={6}>
+
                 </Col>
             </Row>
         </div>

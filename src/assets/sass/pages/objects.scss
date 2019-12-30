@@ -1,39 +1,62 @@
 @import '../variables.scss';
 
-body {
-    margin: 0;
-    padding: 0;
+.page-container {
+    padding: 8rem;
 
-    .page-container {
-        padding: 8rem;
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+    }
 
-        h1 {
-            font-size: 4rem;
-            font-weight: 400;
+    .sub-category {
+        display: flex;
+
+        h6 {
+            padding: 0 1rem;
         }
+
+        .active {
+            color: $gold;
+        }
+    }
+
+    @media (max-width: $desktop) {
+        padding: 0;
 
         .sub-category {
-            display: flex;
-
-            h6 {
-                padding: 0 1rem;
-            }
-
-            .active {
-                color: $gold;
-            }
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+            margin-top: 1rem;
         }
 
-        @media (max-width: $desktop) {
-            padding: 0;
+        h1 {
+            font-size: 3rem;
+        }
 
-            h1 {
-                font-size: 3rem;
-            }
+        h6 {
+            font-size: 0.8rem;
+        }
+    }
 
-            h6 {
-                font-size: 0.8rem;
-            }
+    .newsletter-container {
+        margin: 3rem 0 3rem 0;
+    }
+
+    .form-inline {
+        margin-top: 3rem;
+
+        input {
+            width: 50%;
+            position: absolute;
+            border: none;
+            border-bottom: 1px solid $secondary;
+            border-radius: 0;
+    
+        }
+    
+        svg {
+            position: absolute;
+            margin-left: 45%;
         }
     }
 }

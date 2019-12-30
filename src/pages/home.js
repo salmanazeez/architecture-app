@@ -1,11 +1,16 @@
 import React from 'react';
 import '../assets/sass/pages/home.scss'
-
+import BackgroundSlider from 'react-background-slider'
 import {Row,
         Col, 
         Image,
         } from 'react-bootstrap';
 import Typography from '@material-ui/core/Typography';
+
+import image1 from '../assets/img/home.jpg'
+import image2 from '../assets/img/objects2.jpg'
+import image3 from '../assets/img/home.jpg'
+import image4 from '../assets/img/objects2.jpg'
 
 function Home() {
     return (
@@ -32,6 +37,11 @@ function Home() {
                     </Col>
                 </Row>
             </div>
+            <BackgroundSlider
+                images={[image1, image2, image3, image4]}
+                duration={5}
+                transition={2}
+            />
         </div>
     );
 }
