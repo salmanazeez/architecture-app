@@ -23,6 +23,12 @@
     @media (max-width: $desktop) {
         padding: 0;
 
+        .sub-category {
+            border-top: 1px solid $secondary;
+            border-bottom: 1px solid $secondary;
+            margin-top: 1rem;
+        }
+
         h1 {
             font-size: 3rem;
         }
