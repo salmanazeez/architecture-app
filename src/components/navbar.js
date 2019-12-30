@@ -10,6 +10,7 @@ import {Navbar,
 import SearchIcon from '@material-ui/icons/Search';
 import HomePage from '../pages/home'
 import ObjectsPage from '../pages/objects'
+import CompanyPage from '../pages/company'
 
 import {  Route, Link, Switch } from "react-router-dom"
 
@@ -23,7 +24,7 @@ function NavBar() {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link as={Link} to="/">Company</Nav.Link>
+                                <Nav.Link as={Link} to="/company">Company</Nav.Link>
                                 <Nav.Link as={Link} to="/objects">Objects</Nav.Link>
                                 <Nav.Link as={Link} to="/">Services</Nav.Link>
                                 <Nav.Link as={Link} to="/">News</Nav.Link>
@@ -41,6 +42,7 @@ function NavBar() {
             <Switch>
                 <Route exact path='/'  component={Home} />
                 <Route exact path='/objects'  component={Objects} />
+                <Route exact path='/company'  component={Company} />
             </Switch>
         </div>
     );
@@ -52,5 +54,9 @@ function Home() {
 
 function Objects() {
     return <ObjectsPage></ObjectsPage>;
+}
+
+function Company() {
+    return <CompanyPage></CompanyPage>;
 }
 export default NavBar;

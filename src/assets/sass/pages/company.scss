@@ -1,0 +1,47 @@
+@import '../variables.scss';
+
+.about-container {
+    padding: 6rem;
+    font-family: $global-font;
+
+    h1 {
+        font-size: 4rem;
+        font-weight: 400;
+        padding: 2rem 0;
+    }
+
+    .second-para {
+        margin-top: 5rem;
+    }
+
+    .count-container {
+        margin-top: 6rem;
+        font-weight: bold;
+    }
+
+    .secondary {
+        color: $secondary;
+        font-weight: normal;
+    }
+
+    img {
+        height: 550px;
+        margin: 5rem 0;
+    }
+
+    .service-container {
+        margin-top: 5rem;
+    }
+
+    @media (max-width: $desktop) {
+        padding: 1rem;
+
+        .secondary {
+            font-size: 0.8rem;
+        }
+
+        img {
+            height: auto;
+        }
+    }
+}
