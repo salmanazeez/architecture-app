@@ -14,4 +14,4 @@ Install other packages and dependencies
 I have used react-background-slider for the homepage slider. Install using the following command if you wnat the slider on the template,
 ### `npm install --save react-background-slider`
 
-Read the slider documentation at [https://www.npmjs.com/package/react-background-slider](react-background-slider).
+Read the slider documentation at [react-background-slider](https://www.npmjs.com/package/react-background-slider).
