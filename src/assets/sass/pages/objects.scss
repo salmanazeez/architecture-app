@@ -37,4 +37,26 @@
             font-size: 0.8rem;
         }
     }
+
+    .newsletter-container {
+        margin: 3rem 0 3rem 0;
+    }
+
+    .form-inline {
+        margin-top: 3rem;
+
+        input {
+            width: 50%;
+            position: absolute;
+            border: none;
+            border-bottom: 1px solid $secondary;
+            border-radius: 0;
+    
+        }
+    
+        svg {
+            position: absolute;
+            margin-left: 45%;
+        }
+    }
 }
