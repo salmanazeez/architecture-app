@@ -1,59 +1,53 @@
 @import '../variables.scss';
-
-body {
-    padding: 0;
-    margin: 0;
+    
+.homepage-container {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(49, 49, 150, 0.3)), url(../../img/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: 50%;
+    color: $primary;
+    position: absolute;
+    width: 100%;
     font-family: $global-font;
     font-weight: bold;
-    
-    .homepage-container {
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(49, 49, 150, 0.3)), url(../../img/home.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        background-position: 50%;
-        color: $primary;
-        position: absolute;
-        width: 100%;
 
-        .contents-container {
-            .text-container {
-                margin-top: 50%;
+    .text-container {
+        margin-top: 50%;
 
-                h6 {
-                    color: $primary;
-                    margin: 2rem 0 2rem 0;
-                }
+        h6 {
+            color: $primary;
+            margin: 2rem 0 2rem 0;
+        }
 
-                @media (max-width: $mobile) {
-                    margin-top: 0;
+        @media (max-width: $mobile) {
+            margin-top: 0;
 
-                    h1 {
-                        font-size: 4rem;
-                    }
-                }
+            h1 {
+                font-size: 4rem;
             }
+        }
+    }
 
-            .social-container {
-                position: absolute;
-                top: 50%;
-                left: 90%;
+    .social-container {
+        position: absolute;
+        top: 50%;
+        left: 90%;
 
-                img {
-                    height: 30px;
-                    display: block;
-                    margin: 2rem 0;
-                }
+        img {
+            height: 30px;
+            display: block;
+            margin: 2rem 0;
+        }
 
-                @media (max-width: $tablet) {
-                    top: 0;
-                    left: 0;
+        @media (max-width: $tablet) {
+            position: unset;
+            top: 0;
+            left: 0;
 
-                    img {
-                        display: inline;
-                        margin: 2rem 2rem;
-                    }
-                }
+            img {
+                display: inline;
+                margin: 1rem 1rem;
             }
         }
     }
