@@ -6,15 +6,21 @@ import {Row,
         Image,
         } from 'react-bootstrap';
 import Typography from '@material-ui/core/Typography';
+import { Helmet } from 'react-helmet'
 
 import image1 from '../assets/img/home.jpg'
 import image2 from '../assets/img/objects2.jpg'
 import image3 from '../assets/img/home.jpg'
 import image4 from '../assets/img/objects2.jpg'
 
+const pageTitle = 'Welcome to BALTICARCH'
+
 function Home() {
     return (
         <div className="homepage-container">
+            <Helmet>
+                <title>{ pageTitle }</title>
+            </Helmet>
             <div className="contents-container">
                 <Row>
                     <Col xs={12} md={6}>

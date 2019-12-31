@@ -9,10 +9,16 @@ import {Row,
         Form,
         FormControl,
         } from 'react-bootstrap';
+import { Helmet } from 'react-helmet'
+
+const pageTitle = 'Objects and services of BALTICARCH'
 
 function Objects() {
     return (
         <div className="page-container">
+            <Helmet>
+                <title>{ pageTitle }</title>
+            </Helmet>
             <Row>
                 <Col xs={12} md={6}>
                     <Typography variant="h1">Objects</Typography>

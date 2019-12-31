@@ -22,13 +22,9 @@ body {
                     }
                 }
             
-                .navbar-nav {
-                    position: absolute;
-                    left: 50%;
-                    transform: translateX(-50%);
-            
+                .navbar-nav {          
                     a {
-                        margin: 0 2.5rem;
+                        margin: 0 1rem;
                         color: $font-color;
                         font-size: 0.9rem;
 
@@ -56,6 +52,15 @@ body {
                         &::placeholder {
                             color: $secondary;
                             margin: 1rem;
+                        }
+                    }
+                    @media (min-width: $xl-desktop) {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        a {
+                            margin: 0 2rem;
                         }
                     }
                 }

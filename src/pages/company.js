@@ -12,6 +12,9 @@ import {Row,
   Col, 
   Image,
   } from 'react-bootstrap';
+import { Helmet } from 'react-helmet'
+
+const pageTitle = 'About company and services'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,6 +84,9 @@ export default function HomeTabs() {
       </AppBar>
       <TabPanel value={value} index={0}>
         <div className="about-container">
+          <Helmet>
+            <title>{ pageTitle }</title>
+          </Helmet>
           <Row>
             <Col xs={12} md={8}>
               <Typography variant="h1">Company</Typography>
