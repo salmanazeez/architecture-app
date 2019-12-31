@@ -70,7 +70,6 @@ const Secondary = ({ text }) => (
 )
 
 export default function HomeTabs() {
-    const classes = useStyles();
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
