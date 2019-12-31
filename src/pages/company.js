@@ -65,6 +65,10 @@ const useStyles = makeStyles({
   },
 });
 
+const Secondary = ({ text }) => (
+  <Typography variant="subtitle1" className="secondary">{text}</Typography>
+)
+
 export default function HomeTabs() {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
@@ -112,7 +116,7 @@ export default function HomeTabs() {
             <Col xs={12} md={3}></Col>
             <Image src={require('../assets/img/about/image1.jpg')} fluid />
             <Col xs={12} md={8}>
-              <Typography variant="subtitle1" className="secondary">Since 2003 we work on a large variety of projects. We gained experience in the realization of architectural projects, reinnovations, interior designs and product designs. Our clients include property developers, housing corporations, multinational corporations, laws firm and private families. We are ambitious and motivated. We like to learn and broaden our horizon.</Typography>
+              <Secondary text="Since 2003 we work on a large variety of projects. We gained experience in the realization of architectural projects, reinnovations, interior designs and product designs. Our clients include property developers, housing corporations, multinational corporations, laws firm and private families. We are ambitious and motivated. We like to learn and broaden our horizon." />
               <Typography variant="subtitle1" className="second-para">Our practice is found on the idea that design can have direct and positive impact on people's lives. This is achieved through research and innovation, always quesioning the status quo. By focusing on the user experience and drawing on the firm's vast roster of design anf thought leaders the world over, we are uniquely equipped to tackle the most complex of design challenges, no matter how large or small.</Typography>
             </Col>
             <Col xs={12} md={12}>
@@ -122,14 +126,14 @@ export default function HomeTabs() {
               <Typography variant="subtitle1">Services we provide:</Typography>
             </Col>
             <Col xs={12} md={6}>
-              <Typography variant="subtitle1" className="secondary">House-building</Typography>
-              <Typography variant="subtitle1" className="secondary">Engineering structure</Typography>
-              <Typography variant="subtitle1" className="secondary">Bridges and hydrotechnical structures</Typography>
+              <Secondary text="House-building" />
+              <Secondary text="Engineering structure" />
+              <Secondary text="Bridges and hydrotechnical structures" />
             </Col>
             <Col xs={12} md={6}>
-              <Typography variant="subtitle1" className="secondary">Reconstruction and restoration</Typography>
-              <Typography variant="subtitle1" className="secondary">Interior designing</Typography>
-              <Typography variant="subtitle1" className="secondary">Designing</Typography>
+              <Secondary text="Reconstruction and restoration" />
+              <Secondary text="Interior designing" />
+              <Secondary text="Designing" />
             </Col>
           </Row>
         </div>
