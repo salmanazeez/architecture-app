@@ -82,6 +82,8 @@ export default function HomeTabs() {
           <Tab label="Quality" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
+
+      {/* Company about tab */}
       <TabPanel value={value} index={0}>
         <div className="about-container">
           <Helmet>
@@ -132,9 +134,13 @@ export default function HomeTabs() {
           </Row>
         </div>
       </TabPanel>
+
+      {/* Company tab two */}
       <TabPanel value={value} index={1}>
         Item Two
       </TabPanel>
+
+      {/* Company tab three */}
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
