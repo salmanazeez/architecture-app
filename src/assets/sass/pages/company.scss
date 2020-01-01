@@ -1,5 +1,9 @@
 @import '../variables.scss';
 
+.MuiPaper-elevation4 {
+    box-shadow: none !important;
+}
+
 .about-container {
     padding: 6rem;
     font-family: $global-font;
@@ -33,8 +37,14 @@
         margin-top: 5rem;
     }
 
+    .col-4 {
+        h6 {
+            font-weight: bold;
+        }
+    }
+
     @media (max-width: $desktop) {
-        padding: 1rem;
+        padding: 0;
 
         .secondary {
             font-size: 0.8rem;
@@ -42,6 +52,11 @@
 
         img {
             height: auto;
+        }
+
+        .col-4 {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 }
