@@ -11,6 +11,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import HomePage from '../pages/home'
 import ObjectsPage from '../pages/objects'
 import CompanyPage from '../pages/company'
+import WorksPage from '../pages/works'
 
 import {  Route, Link, Switch } from "react-router-dom"
 
@@ -26,7 +27,7 @@ function NavBar() {
                             <Nav className="mr-auto">
                                 <Nav.Link as={Link} to="/company">Company</Nav.Link>
                                 <Nav.Link as={Link} to="/objects">Objects</Nav.Link>
-                                <Nav.Link as={Link} to="/">Services</Nav.Link>
+                                <Nav.Link as={Link} to="/works">Works</Nav.Link>
                                 <Nav.Link as={Link} to="/">News</Nav.Link>
                                 <Nav.Link as={Link} to="/">Careers</Nav.Link>
                                 <Nav.Link as={Link} to="/">Contact</Nav.Link>
@@ -43,6 +44,7 @@ function NavBar() {
                 <Route exact path='/'  component={Home} />
                 <Route exact path='/objects'  component={Objects} />
                 <Route exact path='/company'  component={Company} />
+                <Route exact path='/works'  component={Works} />
             </Switch>
         </div>
     );
@@ -58,5 +60,9 @@ function Objects() {
 
 function Company() {
     return <CompanyPage></CompanyPage>;
+}
+
+function Works() {
+    return <WorksPage></WorksPage>;
 }
 export default NavBar;
